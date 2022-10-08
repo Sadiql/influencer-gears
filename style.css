@@ -20,6 +20,10 @@ nav li a{
     color: black;
 
 }
+.prebook{
+    display: flex;
+    justify-content: space-between;
+}
 .product-prebook-info, .influencer-title{
     width: 582px;
 }
@@ -42,4 +46,10 @@ nav li a{
 .product-prebook-info nav a{
     text-decoration: none;
     color: white;
+}
+.prebook-product-iamge{
+    width: 50%;
+}
+.product-prebook{
+    width: 50%;
 }
