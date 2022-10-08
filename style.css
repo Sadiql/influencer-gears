@@ -20,3 +20,26 @@ nav li a{
     color: black;
 
 }
+.product-prebook-info, .influencer-title{
+    width: 582px;
+}
+.prebook-button{
+    display: flex;
+    background-color: #e02c6d;
+    width: 150px;
+    padding: 10px 24px;
+    border-radius: 41px;
+    gap: 8px;
+}
+.prebook-button a{
+    color: white;
+    text-decoration: none;
+
+}
+.prebook-button .arow-icon{
+    color: white;
+}
+.product-prebook-info nav a{
+    text-decoration: none;
+    color: white;
+}
