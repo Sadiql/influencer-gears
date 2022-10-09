@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Inter:wght@700&family=Poppins:wght@500;700&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
     margin-left: 50px;
@@ -24,14 +25,15 @@ nav li a{
     color: black;
 
 }
-.prebook{
+.prebook, .featured-products{
     display: flex;
     justify-content: space-between;
+    grid-gap:70px;
 }
-.product-prebook-info, .influencer-title{
+.product-prebook-info, .influencer-title, .product-feature-info{
     width: 582px;
 }
-.prebook-button{
+.prebook-button, .Join-button{
     display: flex;
     background-color: #e02c6d;
     width: 150px;
@@ -39,29 +41,30 @@ nav li a{
     border-radius: 41px;
     gap: 8px;
 }
-.prebook-button a{
+.prebook-button a, .Join-button a{
     color: white;
     text-decoration: none;
 
 }
-.prebook-button .arow-icon{
+.prebook-button, .Join-button .arow-icon{
     color: white;
 }
 .product-prebook-info nav a{
     text-decoration: none;
     color: white;
 }
-.prebook-product-iamge{
-    /* width: 50%; */
+.prebook-product-iamge, .featured-products-iamge{
+    width: 100%;
     
 }
-.prebook-product-iamge img{
+.featured-products-iamge img, .prebook-product-iamge img{
     width: 400px;
-    margin-right: 100px;
     height: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
 }
-.product-prebook{
-    width: 50%;
+.product-prebook, .product-featuer{
+    width: 100%;
 }
 .ecomerce-company{
     margin-top: 40px;
@@ -86,4 +89,62 @@ nav li a{
 .ecomerce-company ul li img{
     width: 70px;
     height: 50px;
+}
+.colection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+.product{
+    width: 329PX;
+    height: 476px;
+    padding-left: 30px;
+    padding-top: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+.popular-colection, .section-title{
+    text-align: center;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.half-stroke{
+    color: #FFC014;
+}
+.product-details, .detail{
+    font-family: 'Inter', sans-serif;
+}
+.influencer-info{
+    background-color: #141212;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+.influencer-social-media a{
+    color: white;
+    margin-right: 20px;
+}
+@media only screen and (max-width: 688px){
+    .container{
+        width: 100%;
+    }
+    .prebook, .ecomerce-company, .products-container, .featured-products{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .prebook, .products-container{
+        flex-direction: column;
+    }
+
+    
 }
